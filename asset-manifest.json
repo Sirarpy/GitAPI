@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gitapi/static/css/main.a9bb5e53.chunk.css",
+    "main.js": "/gitapi/static/js/main.8420b40c.chunk.js",
+    "main.js.map": "/gitapi/static/js/main.8420b40c.chunk.js.map",
+    "runtime-main.js": "/gitapi/static/js/runtime-main.c024d902.js",
+    "runtime-main.js.map": "/gitapi/static/js/runtime-main.c024d902.js.map",
+    "static/js/2.027d9dbf.chunk.js": "/gitapi/static/js/2.027d9dbf.chunk.js",
+    "static/js/2.027d9dbf.chunk.js.map": "/gitapi/static/js/2.027d9dbf.chunk.js.map",
+    "static/js/3.9b8b08ca.chunk.js": "/gitapi/static/js/3.9b8b08ca.chunk.js",
+    "static/js/3.9b8b08ca.chunk.js.map": "/gitapi/static/js/3.9b8b08ca.chunk.js.map",
+    "index.html": "/gitapi/index.html",
+    "static/css/main.a9bb5e53.chunk.css.map": "/gitapi/static/css/main.a9bb5e53.chunk.css.map",
+    "static/js/2.027d9dbf.chunk.js.LICENSE.txt": "/gitapi/static/js/2.027d9dbf.chunk.js.LICENSE.txt",
+    "static/media/gitLogo.66e44d1f.png": "/gitapi/static/media/gitLogo.66e44d1f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c024d902.js",
+    "static/js/2.027d9dbf.chunk.js",
+    "static/css/main.a9bb5e53.chunk.css",
+    "static/js/main.8420b40c.chunk.js"
+  ]
+}
