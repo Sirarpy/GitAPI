@@ -13,12 +13,6 @@ export default function Header() {
   }
   // console.log(userUrl);
 
- 
-  const [{ data, loading, error }, refetch] = axios(userUrl)
- 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error!</p>
-
   return (
     <header>
       <div className="gitLogo">
@@ -29,8 +23,7 @@ export default function Header() {
         {/* <button onClick={getUser}>show user</button> */}
 
       </div>
-      <button onClick={refetch}>refetch</button>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      
     </header>
   )
 }
