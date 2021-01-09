@@ -20,13 +20,11 @@ export default function Header() {
         axios
             .get(userUrl)
             .then(res => {
-                getData(res.data)
-            }
-    )
+                    getData(res.data)
+                }
+            )
     }, [userUrl])
 
-    console.log(user)
-    console.log(userUrl)
 
     return (
         <header>
@@ -41,7 +39,7 @@ export default function Header() {
                 {
                     // user && user.id ?
                     user ?
-                        <UserProfile  info={user} />
+                        <UserProfile info={user}/>
                         :
                         "user not found"
                 }

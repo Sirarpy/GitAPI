@@ -1,53 +1,54 @@
 import React from "react";
-import { HashRouter as Router, Switch, Link } from 'react-router-dom';
+import {HashRouter as Router, Link} from 'react-router-dom'
+import {Route, Switch} from "react-router";
 import Repos from "../Repos/Repos";
 import Followers from "../Followers/Followers";
 import Gists from "../Gists/Gists";
 import Following from "../Following/Following";
+import './navigation.css'
 
-// import { useRoutes, A } from "hookrouter";
-// import router from "../Router/Router";
 
 export default function Navigate(props) {
-    // const routeResult = useRoutes(router);
-    // console.log(routeResult)
-    return(
+    return (
         <Router>
-
-            <ul>
+            <ul className='nav'>
                 <li>
-                    <Link to="/repositories">{props.info.public_repos} Repo</Link>
+                    <Link to="/repositories"><img src="https://mozilla.github.io/foundation-icons/svgs/access.svg"
+                                                  alt="repo"/><p>{props.info.public_repos} <span>Repositories</span></p>
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/followers">{props.info.followers} Followers</Link>
+                    <Link to="/followers"><img src="https://mozilla.github.io/foundation-icons/svgs/circle-clubs.svg"
+                                               alt="followers"/><p>{props.info.followers} <span>Followers</span></p>
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/following">{props.info.following} Following</Link>
+                    <Link to="/following"><img
+                        src="https://mozilla.github.io/foundation-icons/svgs/learning-about-us.svg"
+                        alt="following"/><p>{props.info.following} <span>Following</span></p></Link>
                 </li>
                 <li>
-                    <Link to="/gists">{props.info.public_gists} Gists</Link>
+                    <Link to="/gists"><img src="https://mozilla.github.io/foundation-icons/svgs/holding-doc.svg"
+                                           alt="gists"/><p>{props.info.public_gists} <span>Gists</span></p></Link>
                 </li>
             </ul>
 
             <Switch>
-                <Router exact path="/"  component={Repos} />
-                {/*<Router exact path="/repos"  component={Repos} />*/}
-                <Router  path="/followers"  component={Followers} />
-                <Router  path="/following"  component={Following} />
-                <Router  path="/gists"  component={Gists} />
+                {/*<Route exact path="/" component={Repos}>*/}
+                {/*    <Repos />*/}
+                {/*</Route>*/}
+                <Route exact path="/" >
+                    <Repos />
+                </Route>
+                {/*<Route path="/repositories" component={Repos}/>*/}
+                <Route exact path="/repositories" >
+                    <Repos  userRepos = {props.info.repos_url} />
+                </Route>
+                <Route path="/followers" component={Followers}/>
+                <Route path="/following" component={Following}/>
+                <Route path="/gists" component={Gists}/>
             </Switch>
         </Router>
 
-        // <div>
-        //     <div className="App">
-        //         <A href="/">{props.info.public_repos} </A> <br />
-        //         <A href="/repositories">{props.info.public_repos} Repositories</A> <br />
-        //         <A href='/followers'>{props.info.followers} Followers</A>
-        //         <A href="/following">{props.info.following} Following</A>
-        //         <A href="/gists">{props.info.public_gists} Gists</A>
-        //         <br />
-        //         {routeResult || 'no page found'}
-        //     </div>
-        // </div>
     )
 }
