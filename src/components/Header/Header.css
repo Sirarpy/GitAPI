@@ -11,11 +11,11 @@ header .gitLogo img{
     width: 100%;
 }
 
-header .searcharea{
+header .searchRow{
     width: 50%;
     margin-top: 20px;
 }
-header .searcharea input{
+header .searchRow input{
     box-sizing: border-box;
     display: block;
     width: 100%;
