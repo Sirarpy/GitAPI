@@ -1,15 +1,4 @@
-*{
-margin: 0;
-padding: 0;
+:root{
+    font-size: 2vw;
 }
-body{
-    box-sizing: border-box;
-    font-family: "Arial";
-}
-a{
-    text-decoration: none;
-    display: block;
-}
-li{
-    list-style: none;
-}
+

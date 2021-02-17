@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/gittask.iml" filepath="$PROJECT_DIR$/.idea/gittask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/github-users.iml" filepath="$PROJECT_DIR$/.idea/github-users.iml" />
     </modules>
   </component>
 </project>
